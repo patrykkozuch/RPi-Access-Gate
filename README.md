@@ -73,4 +73,4 @@ You need to fill the values in the following files:
 - lambdas/confirm-reset-password.py
 - certs/*
 
-## TODO: Mobile app description
+## TODO: Mobile app description!!!
