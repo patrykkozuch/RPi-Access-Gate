@@ -73,4 +73,26 @@ You need to fill the values in the following files:
 - lambdas/confirm-reset-password.py
 - certs/*
 
-## TODO: Mobile app description!!!
+## Mobile app
+Our IOT mobile app is build with react native and expo platform.
+
+The mobile app consists of several views:
+1. Not authenticated
+	1. Sign In
+	2. Sign Up
+	3. Forgot password
+2. Authenticated
+	1. Main Page with all connected devices listed
+	2. Device page with logs from chosen device
+	3. Modal to connect with new device
+   
+For authentication flow we are using axios library, token from api is stored in expo secured storage. Navigation was implemented with provided by expo, expo navigation.
+
+To connect with device wifi network we decided to use WifiManager library, when user successfully connects with device, we are sending encrypted with eas algorithm credentials to our home network. The communication with device is based on websockets.
+
+To start application:
+```
+cd iotmobileapp
+npm i
+npm run android
+```
